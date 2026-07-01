@@ -127,8 +127,8 @@ export function BeforeAfter() {
             </div>
 
             <h2
-              className="text-slate-900 tracking-tight leading-[1.1]"
-              style={{ textTransform: "capitalize", fontWeight: 800, fontSize: "40px", marginTop: "-11px", marginBottom: "8px" }}
+              className="text-slate-900 tracking-tight leading-[1.1] text-[30px] lg:text-[40px]"
+              style={{ textTransform: "capitalize", fontWeight: 800, marginTop: "-11px", marginBottom: "8px" }}
             >
               Work we're{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0ea5e9] to-[#0284c7]">

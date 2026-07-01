@@ -12,13 +12,12 @@ export function About() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-16 lg:grid-cols-12 lg:items-center">
           
-          {/* Left Column: Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="flex flex-col items-start text-left lg:col-span-7"
+            className="flex flex-col items-center lg:items-start text-center lg:text-left lg:col-span-7"
           >
             {/* Top Pill */}
             <div className="inline-flex items-center gap-2 bg-white border border-slate-200/80 px-4 py-1.5 rounded-full shadow-sm">
@@ -30,11 +29,9 @@ export function About() {
             
             {/* Heading */}
             <h2 
-              className="text-slate-900 tracking-tight"
+              className="text-slate-900 tracking-tight text-[28px] leading-[36px] lg:text-[35px] lg:leading-[49px]"
               style={{
-                fontSize: "35px",
                 fontWeight: 800,
-                lineHeight: "49px",
                 marginBottom: "-17px",
                 marginTop: "15px"
               }}
@@ -92,7 +89,7 @@ export function About() {
             </div>
 
             {/* Buttons Row */}
-            <div className="mt-8 flex flex-wrap gap-4 w-full">
+            <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4 w-full">
               <a
                 href="tel:7045169509"
                 className="inline-flex items-center justify-center rounded-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm px-7 py-4 shadow-md transition-all hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto"

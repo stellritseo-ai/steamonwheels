@@ -54,8 +54,8 @@ export function Hero() {
           </motion.div>
 
           <h1
-            className="text-white tracking-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] -mt-2 mb-2"
-            style={{ fontSize: "43px", lineHeight: "60px", fontWeight: 800, fontFamily: "inherit" }}
+            className="text-white tracking-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] -mt-2 mb-2 text-[25px] leading-[38px] md:text-[43px] md:leading-[60px]"
+            style={{ fontWeight: 800, fontFamily: "inherit" }}
           >
             Professional Residential &amp;
             Commercial Pressure

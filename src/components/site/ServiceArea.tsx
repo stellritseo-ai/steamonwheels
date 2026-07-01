@@ -32,13 +32,13 @@ export function ServiceArea() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Left Column: Heading & Chips (50% width) */}
-          <div className="z-10 text-left">
+          <div className="z-10 flex flex-col items-center lg:items-start text-center lg:text-left">
             <span className="inline-flex items-center gap-2 bg-[#0ea5e9]/10 border border-[#0ea5e9]/20 text-[#0ea5e9] rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider mb-5">
               <TinyDropletIcon /> Service Area <TinyDropletIcon />
             </span>
             <h2
-              className="text-[#0F172A] leading-tight tracking-tight capitalize"
-              style={{ fontSize: "40px", fontWeight: 800, marginBottom: "10px" }}
+              className="text-[#0F172A] leading-tight tracking-tight capitalize text-[29px] lg:text-[40px]"
+              style={{ fontWeight: 800, marginBottom: "10px" }}
             >
               Proudly Serving <span className="text-[#0ea5e9]">Mooresville</span> & Surrounding Areas
             </h2>
@@ -47,7 +47,7 @@ export function ServiceArea() {
             </p>
 
             {/* Premium Capsule Chips */}
-            <div className="flex flex-wrap gap-2.5 mb-8">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-2.5 mb-8">
               {areasData.map((a) => {
                 const isActive = hoveredArea === a.name;
                 return (

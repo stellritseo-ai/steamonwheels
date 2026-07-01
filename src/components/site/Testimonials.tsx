@@ -215,7 +215,7 @@ export function Testimonials() {
           Client Reviews
         </div>
 
-        <h2 className="text-[40px] font-extrabold text-slate-900 tracking-tight leading-tight capitalize -mt-[5px] mb-[10px]">
+        <h2 className="text-[32px] md:text-[40px] font-extrabold text-slate-900 tracking-tight leading-tight capitalize -mt-[5px] mb-[10px]">
           Trusted by{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0ea5e9] to-[#0284c7]">
             Thousands

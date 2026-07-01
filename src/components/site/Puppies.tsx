@@ -52,8 +52,8 @@ export function Puppies() {
             Our Breeding
           </span>
           <h2
-            className="font-extrabold tracking-tight text-foreground leading-tight"
-            style={{ fontSize: "37px", marginTop: "10px", marginBottom: "-12px" }}
+            className="font-extrabold tracking-tight text-foreground leading-tight text-[24px] md:text-[37px]"
+            style={{ marginTop: "10px", marginBottom: "-12px" }}
           >
             Piedmont <span className="gradient-text">Bully Kennel Since 2018</span>
           </h2>

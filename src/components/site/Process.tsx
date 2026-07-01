@@ -119,8 +119,8 @@ export function Process() {
             </span>
 
             <h2 
-              className="text-[#1c140d] tracking-tight leading-[1.15] font-sans"
-              style={{ fontSize: "36px", marginTop: "-15px", marginBottom: "10px", fontWeight: 800 }}
+              className="text-[#1c140d] tracking-tight leading-[1.15] font-sans text-[30px] lg:text-[36px]"
+              style={{ marginTop: "-15px", marginBottom: "10px", fontWeight: 800 }}
             >
               We Complete Every{" "}
               <span className="bg-gradient-to-r from-[#0ea5e9] to-[#0284c7] bg-clip-text text-transparent">

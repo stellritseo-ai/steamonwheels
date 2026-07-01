@@ -29,7 +29,7 @@ export function Contact() {
           <span className="inline-flex items-center gap-2 bg-[#0ea5e9]/10 border border-[#0ea5e9]/20 text-[#0ea5e9] rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider mb-5">
             <TinyDropletIcon /> Get In Touch <TinyDropletIcon />
           </span>
-          <h2 className="text-3xl lg:text-[40px] font-extrabold text-[#0F172A] leading-tight mt-[-10px] mb-[5px] tracking-tight capitalize">
+          <h2 className="text-[27px] lg:text-[40px] font-extrabold text-[#0F172A] leading-tight mt-[-10px] mb-[5px] tracking-tight capitalize">
             Get your <span className="text-[#0ea5e9]">free estimate</span> today.
           </h2>
           <p className="text-sm sm:text-base text-slate-500 font-medium leading-relaxed max-w-lg mx-auto">
