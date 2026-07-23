@@ -5,16 +5,22 @@ import { MapPin, Shield } from "lucide-react";
 const areasData = [
   { name: "Mooresville, NC", x: "55%", y: "45%", primary: true },
   { name: "Cornelius, NC", x: "58%", y: "58%" },
+  { name: "Davidson, NC", x: "60%", y: "65%" },
   { name: "Huntersville, NC", x: "62%", y: "72%" },
   { name: "Denver, NC", x: "38%", y: "52%" },
   { name: "Maiden, NC", x: "24%", y: "42%" },
   { name: "Hickory, NC", x: "15%", y: "30%" },
-  { name: "Lake Norman, NC", x: "48%", y: "50%" },
-  { name: "Terrell, NC", x: "46%", y: "38%" },
-  { name: "Sherrills Ford, NC", x: "38%", y: "35%" },
   { name: "Statesville, NC", x: "50%", y: "20%" },
   { name: "Lincolnton, NC", x: "18%", y: "62%" },
-  { name: "Lake Hickory, NC", x: "14%", y: "22%" },
+  { name: "Newton, NC", x: "20%", y: "38%" },
+  { name: "Conover, NC", x: "18%", y: "32%" },
+  { name: "Charlotte, NC", x: "65%", y: "82%" },
+  { name: "Gastonia, NC", x: "25%", y: "80%" },
+  { name: "Lake Norman, NC", x: "48%", y: "50%" },
+  { name: "Iredell County", x: "52%", y: "25%" },
+  { name: "Catawba County", x: "18%", y: "35%" },
+  { name: "Lincoln County", x: "22%", y: "58%" },
+  { name: "Mecklenburg County", x: "64%", y: "78%" },
 ];
 
 const TinyDropletIcon = () => (
@@ -43,7 +49,7 @@ export function ServiceArea() {
               Proudly Serving <span className="text-[#0ea5e9]">Mooresville</span> & Surrounding Areas
             </h2>
             <p className="text-sm sm:text-base text-slate-500 font-medium leading-relaxed max-w-lg mb-8">
-              We provide professional residential and commercial pressure washing and exterior soft washing services throughout Mooresville, Cornelius, Huntersville, Denver, Hickory, and the surrounding Lake Norman region in North Carolina.
+              We provide professional residential &amp; commercial pressure washing, soft roof cleaning, house washing, driveway cleaning &amp; exterior painting across Mooresville, Maiden, Hickory, Statesville, Lincolnton, Newton, Conover, Denver, Huntersville, Cornelius, Davidson, Charlotte, Gastonia, Lake Norman, and Iredell, Catawba, Lincoln &amp; Mecklenburg Counties, NC.
             </p>
 
             {/* Premium Capsule Chips */}

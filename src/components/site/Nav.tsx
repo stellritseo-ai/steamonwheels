@@ -1,31 +1,35 @@
 import { useEffect, useState } from "react";
 import {
   Menu, X, Phone, Shield, Award, Calendar, ChevronDown,
-  Home, Building2, Layers, Sparkles, Car, Paintbrush,
+  Home, Building2, Layers, Sparkles, Car, Paintbrush, Star, Mail, FileText, Camera,
   Facebook, Instagram
 } from "lucide-react";
 import logoImg from "@/assets/logo.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
-  { href: "#top", label: "Home" },
-  { href: "#about", label: "About Us" },
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About Us" },
   {
-    href: "#services",
+    href: "/#services",
     label: "Services",
     submenu: [
-      { href: "#services", label: "Residential", icon: Home },
-      { href: "#services", label: "Commercial", icon: Building2 },
-      { href: "#services", label: "Concrete Cleaning", icon: Layers },
-      { href: "#services", label: "Roof Washing", icon: Shield },
-      { href: "#services", label: "Siding & Exterior Cleaning", icon: Sparkles },
-      { href: "#services", label: "Driveway Cleaning", icon: Car },
-      { href: "#contact", label: "Painting Service", icon: Paintbrush },
+      { href: "/residential", label: "Residential", icon: Home },
+      { href: "/commercial", label: "Commercial", icon: Building2 },
+      { href: "/concrete-cleaning", label: "Concrete Cleaning", icon: Layers },
+      { href: "/roof-washing", label: "Roof Washing", icon: Shield },
+      { href: "/siding-cleaning", label: "Siding & Exterior Cleaning", icon: Sparkles },
+      { href: "/driveway-cleaning", label: "Driveway Cleaning", icon: Car },
+      { href: "/painting-service", label: "Painting Service", icon: Paintbrush },
+      { href: "/gallery", label: "Before & After Gallery", icon: Camera },
+      { href: "/reviews", label: "Customer Reviews", icon: Star },
+      { href: "/contact", label: "Contact Us", icon: Mail },
+      { href: "/estimate", label: "Get Free Estimate", icon: FileText },
     ]
   },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#reviews", label: "Reviews" },
-  { href: "#contact", label: "Contact Us" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/reviews", label: "Reviews" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 export function Nav() {
@@ -94,7 +98,7 @@ export function Nav() {
           <div className="mx-auto max-w-7xl px-4">
             <nav className="flex items-center justify-between">
               {/* Logo */}
-              <a href="#top" className="flex items-center group transition-transform hover:scale-[1.02]">
+              <a href="/" className="flex items-center group transition-transform hover:scale-[1.02]">
                 <img src={logoImg} alt="SteamOnWheels Logo" className="h-16 w-auto object-contain" />
               </a>
 
@@ -156,7 +160,7 @@ export function Nav() {
                   <Phone className="h-3.5 w-3.5 text-primary" /> (704) 516-9509
                 </a>
                 <a
-                  href="#contact"
+                  href="/estimate"
                   className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-5 py-2.5 text-xs font-bold text-primary-foreground shadow-glow transition-all hover:scale-[1.03]"
                 >
                   Get Free Estimate
@@ -222,7 +226,7 @@ export function Nav() {
                           <span>{l.label}</span>
                           <ChevronDown className={`h-5 w-5 text-slate-400 transition-transform duration-300 ${mobileServicesOpen ? "rotate-180 text-[#0ea5e9]" : ""}`} />
                         </button>
-                        
+
                         {/* Smooth collapsing sub-menu */}
                         <AnimatePresence initial={false}>
                           {mobileServicesOpen && (
@@ -279,7 +283,7 @@ export function Nav() {
                   <Phone className="h-4.5 w-4.5 text-[#0ea5e9]" /> Call (704) 516-9509
                 </a>
                 <a
-                  href="#contact"
+                  href="/estimate"
                   onClick={() => setOpen(false)}
                   className="block w-full rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#0284c7] hover:from-[#0ea5e9] hover:to-[#0369a1] py-3.5 text-center font-bold text-white shadow-[0_4px_14px_rgba(14,165,233,0.25)] hover:scale-[1.01] active:scale-[0.99] transition-all text-sm cursor-pointer"
                 >

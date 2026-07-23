@@ -235,6 +235,17 @@ export function Testimonials() {
         <MarqueeRow items={row2} direction="right" />
       </div>
 
+      {/* View All Reviews Button */}
+      <div className="relative z-10 mt-12 text-center">
+        <a
+          href="/reviews"
+          className="inline-flex items-center gap-2 rounded-full bg-slate-900 hover:bg-slate-800 text-white px-8 py-3.5 text-xs font-extrabold uppercase tracking-wider shadow-lg hover:scale-105 active:scale-95 transition-all duration-300"
+        >
+          <span>Read 15 Customer Reviews</span>
+          <span className="text-[#0ea5e9]">→</span>
+        </a>
+      </div>
+
       {/* CSS Animations */}
       <style>{`
         @keyframes marquee-left {

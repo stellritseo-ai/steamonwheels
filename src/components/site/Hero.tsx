@@ -73,7 +73,7 @@ export function Hero() {
             className="text-xs sm:text-sm md:text-base text-neutral-300 font-medium leading-relaxed max-w-2xl drop-shadow-[0_1px_4px_rgba(0,0,0,0.3)]"
             style={{ marginBottom: "20px" }}
           >
-            Providing Top-Tier Exterior Cleaning Services for Homeowners &amp; Business Owners in North Carolina. Backed by 15+ years of experience, we bring showroom-grade shine to your siding, roofs, concrete, and decks. Fully Licensed &amp; Insured.
+            Providing top-rated pressure washing, soft roof cleaning, house washing, driveway concrete degreasing, and exterior painting across Mooresville, Lake Norman, Cornelius, Huntersville, Denver, Statesville, Hickory &amp; Charlotte, NC. 15+ years of experience. Fully Licensed &amp; Insured.
           </motion.p>
 
           {/* Quick Actions */}
@@ -91,7 +91,7 @@ export function Hero() {
               <span>Call: (704) 516-9509</span>
             </a>
             <a
-              href="#contact"
+              href="/estimate"
               className="inline-flex items-center justify-center gap-1.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-md px-5 sm:px-7 py-3 sm:py-3.5 text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider hover:bg-white hover:text-neutral-900 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 w-full sm:w-auto"
             >
               <span>Get Free Estimate</span>

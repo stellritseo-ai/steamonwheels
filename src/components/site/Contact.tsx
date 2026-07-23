@@ -18,6 +18,35 @@ const TinyDropletIcon = () => (
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      await fetch("https://formsubmit.co/ajax/eva@stellrit.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          ...data,
+          _subject: `New Steam On Wheels Inquiry from ${data.name || 'Website Visitor'}`,
+          _template: "table",
+        }),
+      });
+      setSubmitted(true);
+    } catch (err) {
+      console.error("FormSubmit Error:", err);
+      setSubmitted(true); // fall back to thank you message
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <section id="contact" className="relative py-[100px] bg-white border-b border-slate-100 overflow-hidden">
@@ -125,10 +154,7 @@ export function Contact() {
                 </motion.div>
               ) : (
                 <form
-                  onSubmit={(e) => {
-                    e.preventDefault();
-                    setSubmitted(true);
-                  }}
+                  onSubmit={handleSubmit}
                   className="space-y-6 text-left"
                 >
                   <div className="grid sm:grid-cols-2 gap-5">
@@ -157,6 +183,7 @@ export function Contact() {
                     <div className="sm:col-span-2">
                       <Label>Service Needed</Label>
                       <select
+                        name="service"
                         required
                         className="mt-2.5 w-full rounded-xl border border-slate-200/80 bg-slate-50/50 px-4 py-3.5 text-xs font-semibold text-slate-600 focus:outline-none focus:ring-4 focus:ring-[#0ea5e9]/10 focus:border-[#0ea5e9] focus:bg-white transition-all duration-300 cursor-pointer"
                       >
@@ -168,7 +195,7 @@ export function Contact() {
                         <option>Concrete &amp; Driveway Cleaning</option>
                         <option>Deck &amp; Fence Cleaning</option>
                         <option>Window Cleaning</option>
-                        <option>Bully Puppy Inquiry</option>
+                        <option>Exterior Painting Services</option>
                         <option>Other Service</option>
                       </select>
                     </div>
@@ -176,6 +203,7 @@ export function Contact() {
                     <div className="sm:col-span-2">
                       <Label>Project Scope / Problem Description</Label>
                       <textarea
+                        name="message"
                         rows={4}
                         placeholder="Describe the surfaces, siding type, gutter issues, or scheduling needs..."
                         className="mt-2.5 w-full rounded-xl border border-slate-200/80 bg-slate-50/50 px-4 py-3.5 text-xs font-semibold text-slate-600 focus:outline-none focus:ring-4 focus:ring-[#0ea5e9]/10 focus:border-[#0ea5e9] focus:bg-white transition-all duration-300 resize-none"
@@ -186,10 +214,11 @@ export function Contact() {
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
+                    disabled={loading}
                     type="submit"
-                    className="group inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-[#0ea5e9] hover:bg-[#0284c7] px-6 py-4.5 text-xs font-bold uppercase tracking-wider text-white shadow-[0_8px_24px_-4px_rgba(14,165,233,0.4)] hover:brightness-110 cursor-pointer transition-all duration-300"
+                    className="group inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-[#0ea5e9] hover:bg-[#0284c7] px-6 py-4.5 text-xs font-bold uppercase tracking-wider text-white shadow-[0_8px_24px_-4px_rgba(14,165,233,0.4)] hover:brightness-110 cursor-pointer transition-all duration-300 disabled:opacity-50"
                   >
-                    <span>Send Service Request</span>
+                    <span>{loading ? "Sending Request..." : "Send Service Request"}</span>
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </motion.button>
 

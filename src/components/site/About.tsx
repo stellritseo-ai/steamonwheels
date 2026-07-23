@@ -97,7 +97,7 @@ export function About() {
                 Call Now To Get Started!
               </a>
               <a
-                href="#contact"
+                href="/estimate"
                 className="inline-flex items-center justify-center rounded-full bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold text-sm px-7 py-4 shadow-md transition-all hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto"
               >
                 Get Your Free Consultation

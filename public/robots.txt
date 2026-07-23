@@ -1,0 +1,6 @@
+# Robots.txt for Steam On Wheels NC - https://steamonwheelsnc.com
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://steamonwheelsnc.com/sitemap.xml

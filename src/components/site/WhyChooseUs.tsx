@@ -110,12 +110,12 @@ export function WhyChooseUs() {
 
               {/* CTAs */}
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
-                <Link
-                  to="#"
+                <a
+                  href="/#services"
                   className="inline-flex items-center justify-center gap-2 bg-[#0F172A] hover:bg-[#1e293b] text-white text-[11px] md:text-xs font-bold uppercase tracking-widest rounded-full px-7 py-3.5 transition-all duration-300 shadow-[0_4px_14px_rgba(15,23,42,0.15)] hover:scale-[1.03] active:scale-[0.97]"
                 >
                   Explore Services
-                </Link>
+                </a>
                 <a
                   href="tel:7045169509"
                   className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0ea5e9] to-[#0284c7] hover:from-[#0ea5e9] hover:to-[#0369a1] text-white text-[11px] md:text-xs font-bold uppercase tracking-widest rounded-full px-7 py-3.5 transition-all duration-300 shadow-[0_4px_14px_rgba(14,165,233,0.25)] hover:scale-[1.03] active:scale-[0.97]"

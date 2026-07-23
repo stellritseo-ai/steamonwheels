@@ -210,7 +210,7 @@ export function Services() {
 
                           <div className="pt-2">
                             <Link
-                              to="#"
+                              to={s.title === "Residential" ? "/residential" : s.title === "Commercial" ? "/commercial" : s.title === "Concrete Cleaning" ? "/concrete-cleaning" : s.title === "Roof Washing" ? "/roof-washing" : s.title.includes("Siding") ? "/siding-cleaning" : s.title.includes("Driveway") ? "/driveway-cleaning" : s.title.includes("Painting") ? "/painting-service" : "#"}
                               className="relative inline-flex items-center gap-1 text-[#0ea5e9] hover:text-[#3b82f6] font-bold text-[10px] uppercase tracking-widest pb-0.5 transition-colors duration-300"
                             >
                               <span>View More</span>

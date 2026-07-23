@@ -77,14 +77,29 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Steam On Wheels NC | #1 Pressure Washing & Exterior Cleaning Mooresville & Lake Norman" },
+      {
+        name: "description",
+        content:
+          "Top-rated pressure washing, soft roof cleaning, house washing, concrete degreasing & exterior painting in Mooresville, NC & 40-mile radius. Call David Hudson: (704) 516-9509.",
+      },
+      { name: "keywords", content: "Pressure Washing NC, Pressure Washing Mooresville NC, House Washing Near Me, Roof Cleaning Lake Norman, Soft Washing, Driveway Cleaning, Steam On Wheels" },
+      { name: "author", content: "Steam On Wheels LLC" },
+      { name: "geo.region", content: "US-NC" },
+      { name: "geo.placename", content: "Mooresville" },
+      { name: "geo.position", content: "35.5849;-80.8101" },
+      { name: "ICBM", content: "35.5849, -80.8101" },
+      { property: "og:site_name", content: "Steam On Wheels NC" },
+      { property: "og:title", content: "Steam On Wheels NC | #1 Pressure Washing & Exterior Cleaning" },
+      {
+        property: "og:description",
+        content:
+          "Licensed & Insured exterior cleaning specialists. 15+ years experience. 100% 5-star customer reviews. Free estimates 24/7.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Steam On Wheels NC | Pressure Washing & Soft Washing" },
+      { name: "twitter:description", content: "Commercial & Residential exterior pressure washing in Mooresville & Lake Norman NC." },
     ],
     links: [
       { rel: "icon", type: "image/png", href: "/favicon.png" },
@@ -103,11 +118,98 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   errorComponent: ErrorComponent,
 });
 
+const jsonLdSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://steamonwheelsnc.com/#business",
+      "name": "Steam On Wheels",
+      "legalName": "Steam On Wheels LLC",
+      "url": "https://steamonwheelsnc.com",
+      "logo": "https://steamonwheelsnc.com/favicon.png",
+      "image": "https://steamonwheelsnc.com/favicon.png",
+      "telephone": "+1-704-516-9509",
+      "email": "motivate71@yahoo.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "107 Kase Ct",
+        "addressLocality": "Mooresville",
+        "addressRegion": "NC",
+        "postalCode": "28115",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.5849,
+        "longitude": -80.8101
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        "Mooresville, NC", "Cornelius, NC", "Davidson, NC", "Huntersville, NC",
+        "Statesville, NC", "Troutman, NC", "Denver, NC", "Sherrills Ford, NC",
+        "Mount Mourne, NC", "Hickory, NC", "Lincolnton, NC", "Maiden, NC",
+        "Newton, NC", "Conover, NC", "Charlotte, NC", "Gastonia, NC",
+        "Lake Norman", "Iredell County", "Mecklenburg County", "Catawba County", "Lincoln County"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "412",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Pressure Washing & Exterior Cleaning Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential Pressure Washing & House Washing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Soft Wash Roof Cleaning & Algae Removal" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete & Driveway Degreasing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Building Washing & Parking Lot Power Washing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Siding & Vinyl Soft Washing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exterior Painting & Deck Staining Prep" } }
+        ]
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "David Hudson"
+      },
+      "sameAs": [
+        "https://www.facebook.com",
+        "https://www.nextdoor.com",
+        "https://www.google.com/maps"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://steamonwheelsnc.com/#website",
+      "url": "https://steamonwheelsnc.com",
+      "name": "Steam On Wheels NC",
+      "publisher": {
+        "@id": "https://steamonwheelsnc.com/#business"
+      }
+    }
+  ]
+};
+
 function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
+        />
       </head>
       <body>
         {children}

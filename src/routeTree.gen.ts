@@ -9,8 +9,80 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SidingCleaningRouteImport } from './routes/siding-cleaning'
+import { Route as RoofWashingRouteImport } from './routes/roof-washing'
+import { Route as ReviewsRouteImport } from './routes/reviews'
+import { Route as ResidentialRouteImport } from './routes/residential'
+import { Route as PaintingServiceRouteImport } from './routes/painting-service'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as EstimateRouteImport } from './routes/estimate'
+import { Route as DrivewayCleaningRouteImport } from './routes/driveway-cleaning'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ConcreteCleaningRouteImport } from './routes/concrete-cleaning'
+import { Route as CommercialRouteImport } from './routes/commercial'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SidingCleaningRoute = SidingCleaningRouteImport.update({
+  id: '/siding-cleaning',
+  path: '/siding-cleaning',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoofWashingRoute = RoofWashingRouteImport.update({
+  id: '/roof-washing',
+  path: '/roof-washing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReviewsRoute = ReviewsRouteImport.update({
+  id: '/reviews',
+  path: '/reviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResidentialRoute = ResidentialRouteImport.update({
+  id: '/residential',
+  path: '/residential',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PaintingServiceRoute = PaintingServiceRouteImport.update({
+  id: '/painting-service',
+  path: '/painting-service',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EstimateRoute = EstimateRouteImport.update({
+  id: '/estimate',
+  path: '/estimate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DrivewayCleaningRoute = DrivewayCleaningRouteImport.update({
+  id: '/driveway-cleaning',
+  path: '/driveway-cleaning',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConcreteCleaningRoute = ConcreteCleaningRouteImport.update({
+  id: '/concrete-cleaning',
+  path: '/concrete-cleaning',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommercialRoute = CommercialRouteImport.update({
+  id: '/commercial',
+  path: '/commercial',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +91,200 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/commercial': typeof CommercialRoute
+  '/concrete-cleaning': typeof ConcreteCleaningRoute
+  '/contact': typeof ContactRoute
+  '/driveway-cleaning': typeof DrivewayCleaningRoute
+  '/estimate': typeof EstimateRoute
+  '/gallery': typeof GalleryRoute
+  '/painting-service': typeof PaintingServiceRoute
+  '/residential': typeof ResidentialRoute
+  '/reviews': typeof ReviewsRoute
+  '/roof-washing': typeof RoofWashingRoute
+  '/siding-cleaning': typeof SidingCleaningRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/commercial': typeof CommercialRoute
+  '/concrete-cleaning': typeof ConcreteCleaningRoute
+  '/contact': typeof ContactRoute
+  '/driveway-cleaning': typeof DrivewayCleaningRoute
+  '/estimate': typeof EstimateRoute
+  '/gallery': typeof GalleryRoute
+  '/painting-service': typeof PaintingServiceRoute
+  '/residential': typeof ResidentialRoute
+  '/reviews': typeof ReviewsRoute
+  '/roof-washing': typeof RoofWashingRoute
+  '/siding-cleaning': typeof SidingCleaningRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/commercial': typeof CommercialRoute
+  '/concrete-cleaning': typeof ConcreteCleaningRoute
+  '/contact': typeof ContactRoute
+  '/driveway-cleaning': typeof DrivewayCleaningRoute
+  '/estimate': typeof EstimateRoute
+  '/gallery': typeof GalleryRoute
+  '/painting-service': typeof PaintingServiceRoute
+  '/residential': typeof ResidentialRoute
+  '/reviews': typeof ReviewsRoute
+  '/roof-washing': typeof RoofWashingRoute
+  '/siding-cleaning': typeof SidingCleaningRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/commercial'
+    | '/concrete-cleaning'
+    | '/contact'
+    | '/driveway-cleaning'
+    | '/estimate'
+    | '/gallery'
+    | '/painting-service'
+    | '/residential'
+    | '/reviews'
+    | '/roof-washing'
+    | '/siding-cleaning'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/commercial'
+    | '/concrete-cleaning'
+    | '/contact'
+    | '/driveway-cleaning'
+    | '/estimate'
+    | '/gallery'
+    | '/painting-service'
+    | '/residential'
+    | '/reviews'
+    | '/roof-washing'
+    | '/siding-cleaning'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/commercial'
+    | '/concrete-cleaning'
+    | '/contact'
+    | '/driveway-cleaning'
+    | '/estimate'
+    | '/gallery'
+    | '/painting-service'
+    | '/residential'
+    | '/reviews'
+    | '/roof-washing'
+    | '/siding-cleaning'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  CommercialRoute: typeof CommercialRoute
+  ConcreteCleaningRoute: typeof ConcreteCleaningRoute
+  ContactRoute: typeof ContactRoute
+  DrivewayCleaningRoute: typeof DrivewayCleaningRoute
+  EstimateRoute: typeof EstimateRoute
+  GalleryRoute: typeof GalleryRoute
+  PaintingServiceRoute: typeof PaintingServiceRoute
+  ResidentialRoute: typeof ResidentialRoute
+  ReviewsRoute: typeof ReviewsRoute
+  RoofWashingRoute: typeof RoofWashingRoute
+  SidingCleaningRoute: typeof SidingCleaningRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/siding-cleaning': {
+      id: '/siding-cleaning'
+      path: '/siding-cleaning'
+      fullPath: '/siding-cleaning'
+      preLoaderRoute: typeof SidingCleaningRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/roof-washing': {
+      id: '/roof-washing'
+      path: '/roof-washing'
+      fullPath: '/roof-washing'
+      preLoaderRoute: typeof RoofWashingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reviews': {
+      id: '/reviews'
+      path: '/reviews'
+      fullPath: '/reviews'
+      preLoaderRoute: typeof ReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/residential': {
+      id: '/residential'
+      path: '/residential'
+      fullPath: '/residential'
+      preLoaderRoute: typeof ResidentialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/painting-service': {
+      id: '/painting-service'
+      path: '/painting-service'
+      fullPath: '/painting-service'
+      preLoaderRoute: typeof PaintingServiceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/estimate': {
+      id: '/estimate'
+      path: '/estimate'
+      fullPath: '/estimate'
+      preLoaderRoute: typeof EstimateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/driveway-cleaning': {
+      id: '/driveway-cleaning'
+      path: '/driveway-cleaning'
+      fullPath: '/driveway-cleaning'
+      preLoaderRoute: typeof DrivewayCleaningRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/concrete-cleaning': {
+      id: '/concrete-cleaning'
+      path: '/concrete-cleaning'
+      fullPath: '/concrete-cleaning'
+      preLoaderRoute: typeof ConcreteCleaningRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/commercial': {
+      id: '/commercial'
+      path: '/commercial'
+      fullPath: '/commercial'
+      preLoaderRoute: typeof CommercialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +297,18 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  CommercialRoute: CommercialRoute,
+  ConcreteCleaningRoute: ConcreteCleaningRoute,
+  ContactRoute: ContactRoute,
+  DrivewayCleaningRoute: DrivewayCleaningRoute,
+  EstimateRoute: EstimateRoute,
+  GalleryRoute: GalleryRoute,
+  PaintingServiceRoute: PaintingServiceRoute,
+  ResidentialRoute: ResidentialRoute,
+  ReviewsRoute: ReviewsRoute,
+  RoofWashingRoute: RoofWashingRoute,
+  SidingCleaningRoute: SidingCleaningRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -29,21 +29,22 @@ const socials = [
 ];
 
 const quickLinks = [
-  { label: "Home", href: "#hero" },
-  { label: "About Us", href: "#about" },
-  { label: "Our Services", href: "#services" },
-  { label: "Featured Projects", href: "#projects" },
-  { label: "Client Reviews", href: "#reviews" },
-  { label: "Get In Touch", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Before & After Gallery", href: "/gallery" },
+  { label: "Client Reviews", href: "/reviews" },
+  { label: "Free Estimate", href: "/estimate" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const servicesLinks = [
-  { label: "Pressure Washing", href: "#services" },
-  { label: "Soft Washing", href: "#services" },
-  { label: "Roof Cleaning", href: "#services" },
-  { label: "Gutter Cleaning", href: "#services" },
-  { label: "Concrete Cleaning", href: "#services" },
-  { label: "Window Cleaning", href: "#services" },
+  { label: "Residential Wash", href: "/residential" },
+  { label: "Commercial Cleaning", href: "/commercial" },
+  { label: "Roof Washing", href: "/roof-washing" },
+  { label: "Siding & Exterior Wash", href: "/siding-cleaning" },
+  { label: "Concrete Cleaning", href: "/concrete-cleaning" },
+  { label: "Driveway Cleaning", href: "/driveway-cleaning" },
+  { label: "Exterior Painting", href: "/painting-service" },
 ];
 
 export function Footer() {
