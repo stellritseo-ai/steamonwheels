@@ -125,8 +125,8 @@ const jsonLdSchema = {
     {
       "@type": ["HomeAndConstructionBusiness", "LocalBusiness"],
       "@id": "https://steamonwheelsnc.com/#business",
-      "name": "Steam On Wheels",
-      "legalName": "Steam On Wheels LLC",
+      "name": "Steam On Wheels, LLC",
+      "legalName": "Steam On Wheels, LLC",
       "url": "https://steamonwheelsnc.com",
       "logo": "https://steamonwheelsnc.com/favicon.png",
       "image": "https://steamonwheelsnc.com/favicon.png",
@@ -146,19 +146,6 @@ const jsonLdSchema = {
         "latitude": 35.5849,
         "longitude": -80.8101
       },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "08:00",
-          "closes": "20:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Sunday"],
-          "description": "24/7 Emergency Dispatch Available"
-        }
-      ],
       "areaServed": [
         { "@type": "City", "name": "Mooresville", "sameAs": "https://en.wikipedia.org/wiki/Mooresville,_North_Carolina" },
         { "@type": "City", "name": "Cornelius", "sameAs": "https://en.wikipedia.org/wiki/Cornelius,_North_Carolina" },
@@ -175,13 +162,6 @@ const jsonLdSchema = {
         { "@type": "AdministrativeArea", "name": "Catawba County" },
         { "@type": "AdministrativeArea", "name": "Lincoln County" }
       ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "412",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Pressure Washing & Exterior Cleaning Services",
@@ -199,12 +179,7 @@ const jsonLdSchema = {
       "founder": {
         "@type": "Person",
         "name": "David Hudson"
-      },
-      "sameAs": [
-        "https://www.facebook.com",
-        "https://www.nextdoor.com",
-        "https://www.google.com/maps"
-      ]
+      }
     },
     {
       "@type": "WebSite",

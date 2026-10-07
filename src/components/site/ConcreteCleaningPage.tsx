@@ -787,7 +787,7 @@ export function ConcreteCleaningPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-sm sm:text-base text-white/90 max-w-2xl leading-relaxed font-medium drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)]"
           >
-            Don’t let stained concrete be the first thing you—or your visitors—see. We serve residential and commercial clients in Mooresville, Troutman, Statesville, Cornelius, Davidson, Huntersville, and throughout our 40-mile service area.
+            Don’t let stained concrete be the first thing you—or your visitors—see. We serve residential and commercial clients in Mooresville, Troutman, Statesville, Cornelius, Davidson, Huntersville, and throughout our 50-mile service area.
           </motion.p>
 
           <motion.div

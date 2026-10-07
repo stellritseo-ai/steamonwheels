@@ -776,7 +776,7 @@ export function PaintingServicePage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-sm sm:text-base text-white/90 max-w-2xl leading-relaxed font-medium drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)]"
           >
-            From crisp trim accenting to full-home color transformations, trust Steam On Wheels. Proudly serving Mooresville, Troutman, Statesville, Cornelius, Davidson, Huntersville, and the greater 40-mile region.
+            From crisp trim accenting to full-home color transformations, trust Steam On Wheels. Proudly serving Mooresville, Troutman, Statesville, Cornelius, Davidson, Huntersville, and the greater 50-mile region.
           </motion.p>
 
           <motion.div

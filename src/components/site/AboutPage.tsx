@@ -1000,7 +1000,7 @@ export function AboutPage() {
 
           <div className="flex items-center justify-center gap-2 text-xs text-neutral-400 select-none pt-2">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            <span>Serving Mooresville, NC &amp; a 40-mile radius</span>
+            <span>Serving Mooresville, NC &amp; a 50-mile radius</span>
           </div>
         </div>
       </section>

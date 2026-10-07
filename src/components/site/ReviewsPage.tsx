@@ -569,7 +569,7 @@ export function ReviewsPage() {
       <section className="py-12 bg-white border-b border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-4">
-            Serving Happy Clients Across Mooresville &amp; Surrounding 40-Mile Region
+            Serving Happy Clients Across Mooresville &amp; Surrounding 50-Mile Region
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {serviceTowns.map((town) => (
@@ -655,7 +655,7 @@ export function ReviewsPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-sm sm:text-base text-white/90 max-w-2xl leading-relaxed font-medium drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)]"
           >
-            Serving Mooresville, NC &amp; Communities Within a 40-Mile Radius. Call David Hudson directly or send us an email to get started.
+            Serving Mooresville, NC &amp; Communities Within a 50-Mile Radius. Call David Hudson directly or send us an email to get started.
           </motion.p>
 
           <motion.div

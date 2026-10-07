@@ -100,7 +100,7 @@ const faqs = [
   },
   {
     q: "What areas do you serve?",
-    a: "We serve Mooresville, NC, and all communities within a 40-mile radius—including Troutman, Statesville, Cornelius, Davidson, Huntersville, Denver NC, and Lake Norman.",
+    a: "We serve Mooresville, NC, and all communities within a 50-mile radius—including Troutman, Statesville, Cornelius, Davidson, Huntersville, Denver NC, and Lake Norman.",
   },
   {
     q: "Are you licensed and insured?",
@@ -357,7 +357,7 @@ export function ContactPage() {
                 </div>
               </div>
               <div className="mt-4 pt-3 border-t border-slate-100 text-[11px] font-bold text-slate-600">
-                Mooresville &amp; 40-Mile Region
+                Mooresville &amp; 50-Mile Region
               </div>
             </div>
 
@@ -592,7 +592,7 @@ export function ContactPage() {
               <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-6 text-left">
                 <h3 className="text-sm font-black text-slate-900 uppercase tracking-wider mb-3 flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-[#0ea5e9]" />
-                  <span>40-Mile Regional Service Area</span>
+                  <span>50-Mile Regional Service Area</span>
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {serviceAreaTowns.map((town) => (

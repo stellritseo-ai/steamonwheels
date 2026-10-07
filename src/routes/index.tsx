@@ -16,18 +16,18 @@ import { Partners } from "@/components/site/Partners";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Pressure Washing Mooresville NC & Lake Norman | Steam On Wheels" },
+      { title: "Pressure Washing Mooresville NC | Steam On Wheels" },
       {
         name: "description",
         content:
-          "Professional pressure washing, soft roof washing, house washing & concrete cleaning in Mooresville, Hickory, Statesville & Lake Norman NC. 15+ years experience, licensed & insured. Call (704) 516-9509.",
+          "Professional pressure washing, soft washing, roof cleaning, house washing & commercial exterior cleaning in Mooresville, NC and Lake Norman. Call Steam On Wheels for a free estimate.",
       },
-      { name: "keywords", content: "Pressure Washing Mooresville NC, Pressure Washing NC, House Washing Lake Norman, Soft Wash Roof Cleaning Huntersville NC, Driveway Cleaning Cornelius NC, Commercial Power Washing Hickory NC, Pressure Washing Statesville NC, Concrete Degreasing Denver NC, Exterior Painting Charlotte NC, Pressure Washing Near Me, Pressure Washer Catawba County, Pressure Washing Iredell County, Steam On Wheels" },
-      { property: "og:title", content: "Pressure Washing Mooresville NC & Lake Norman | Steam On Wheels" },
+      { name: "keywords", content: "Pressure Washing Mooresville NC, Pressure Washing Lake Norman NC, Power Washing Mooresville NC, Soft Washing Mooresville NC, House Washing Mooresville NC, Roof Cleaning Mooresville NC, Concrete Cleaning Mooresville NC, Commercial Pressure Washing Mooresville NC, Steam On Wheels" },
+      { property: "og:title", content: "Pressure Washing Mooresville NC | Steam On Wheels" },
       {
         property: "og:description",
         content:
-          "Showroom-grade exterior cleaning for residential & commercial properties in NC. 40-mile service radius. 100% 5-star reviews.",
+          "Professional pressure washing, soft washing, roof cleaning, house washing & commercial exterior cleaning in Mooresville, NC and Lake Norman. 50-mile service radius. Call (704) 516-9509.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://steamonwheelsnc.com/" },

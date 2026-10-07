@@ -333,5 +333,164 @@ export const blogPosts: Record<string, BlogPost> = {
       { name: "Huntersville, NC", href: "/service-areas/huntersville-nc" },
       { name: "Statesville, NC", href: "/service-areas/statesville-nc" }
     ]
+  },
+
+  "how-much-does-pressure-washing-cost-mooresville-nc": {
+    slug: "/blog/how-much-does-pressure-washing-cost-mooresville-nc",
+    title: "How Much Does Pressure Washing Cost in Mooresville & Lake Norman NC? (2026 Pricing Guide)",
+    metaTitle: "How Much Does Pressure Washing Cost in Mooresville NC? | 2026 Guide",
+    metaDescription: "Transparent 2026 exterior cleaning pricing for Mooresville & Lake Norman NC. Average costs for house washing, roof cleaning, and driveway pressure washing.",
+    category: "Cost & Pricing Guide",
+    readTime: "6 min read",
+    publishDate: "2026-08-10",
+    modifiedDate: "2026-10-08",
+    heroImage: svcPressureWash,
+    excerpt: "Understand exact pricing factors for residential and commercial exterior cleaning across Lake Norman. From square footage to multi-service bundle discounts.",
+    author: {
+      name: "David Hudson",
+      role: "Founder & Lead Technician, Steam On Wheels LLC"
+    },
+    keyTakeaways: [
+      "Average house soft washing in Mooresville ranges between $250 and $450 depending on square footage and stories.",
+      "Shingle-safe soft wash roof cleaning generally costs between $350 and $700 depending on pitch and square footage.",
+      "Concrete driveway pressure washing typically averages $150 to $300 for standard 2-to-3 car driveways.",
+      "Bundling house washing, roof cleaning, and flatwork together yields substantial multi-service cost savings."
+    ],
+    contentSections: [
+      {
+        heading: "Average Exterior Cleaning Costs in Lake Norman NC",
+        paragraphs: [
+          "When budgeting for exterior property maintenance in Mooresville, Cornelius, Davidson, or Huntersville, pricing is influenced by home size, surface material, organic buildup severity, and ease of access.",
+          "Unlike cut-rate operators who use destructive high-pressure equipment with uncalibrated chemical mixtures, reputable licensed and insured professionals invest in commercial low-pressure soft-wash systems that protect your building materials."
+        ]
+      },
+      {
+        heading: "Itemized Cost Breakdown by Service",
+        paragraphs: [
+          "Here is an overview of standard industry pricing for the Lake Norman region in 2026:"
+        ],
+        bulletPoints: [
+          "Soft House Washing: $250 – $450 (Covers vinyl, Hardie board, brick, and stucco exteriors).",
+          "Soft Wash Roof Cleaning: $350 – $750 (ARMA-compliant Gloeocapsa magma black algae eradication).",
+          "Concrete Driveway & Sidewalks: $150 – $350 (Rotary surface cleaner extraction of red clay and oil).",
+          "Commercial Storefronts & Dumpster Pads: Custom itemized quotes with monthly/quarterly contract discounts."
+        ]
+      },
+      {
+        heading: "Why Choosing Licensed & Insured Professionals Protects Your Wallet",
+        paragraphs: [
+          "Hiring an uninsured amateur with a rented cold-water pressure washer can result in thousands of dollars in property damage—including blown window seals, stripped shingle granules, gouged concrete, and burnt landscaping.",
+          "Steam On Wheels carries $2,000,000 in comprehensive commercial general liability insurance and provides transparent, written, itemized estimates with zero hidden fees."
+        ]
+      }
+    ],
+    relatedServices: [
+      { title: "Soft Wash House Washing", href: "/services/house-washing" },
+      { title: "Roof Algae Cleaning", href: "/services/roof-cleaning" },
+      { title: "Concrete Driveway Cleaning", href: "/services/concrete-cleaning" }
+    ],
+    relatedCities: [
+      { name: "Mooresville, NC", href: "/service-areas/mooresville-nc" },
+      { name: "Lake Norman, NC", href: "/service-areas/lake-norman-nc" },
+      { name: "Cornelius, NC", href: "/service-areas/cornelius-nc" }
+    ]
+  },
+
+  "best-time-of-year-to-pressure-wash-home-mooresville-nc": {
+    slug: "/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc",
+    title: "The Best Time of Year to Pressure Wash Your Home in Mooresville NC",
+    metaTitle: "Best Time of Year to Pressure Wash Your House in NC | Seasonal Guide",
+    metaDescription: "Discover the best season to pressure wash your home in Mooresville & Lake Norman NC. Spring post-pollen tips, summer prep & fall leaf stain prevention.",
+    category: "Seasonal Maintenance",
+    readTime: "5 min read",
+    publishDate: "2026-08-20",
+    modifiedDate: "2026-10-08",
+    heroImage: svcResidential,
+    excerpt: "Timing your exterior wash correctly maximizes clean duration. Learn why late spring after pine pollen and early autumn are the two optimal washing windows in North Carolina.",
+    author: {
+      name: "David Hudson",
+      role: "Founder & Lead Technician, Steam On Wheels LLC"
+    },
+    keyTakeaways: [
+      "Late Spring (Late April to Mid May) is the most popular time immediately following the North Carolina pine pollen season.",
+      "Early Fall (September to October) prepares homes for holidays and cleans summer humidity algae buildup.",
+      "Washing before pollen drops results in premature dust accumulation; wait until tree buds settle.",
+      "Winter soft washing is fully viable on days above 40°F to remove dormant mold and black streaks."
+    ],
+    contentSections: [
+      {
+        heading: "Understanding North Carolina's Seasonal Exterior Challenges",
+        paragraphs: [
+          "North Carolina's climate creates distinct exterior cleaning seasons. In early spring (late March to mid April), the Piedmont region experiences heavy yellow pine pollen clouds that coat every exterior surface.",
+          "Washing your siding in early April often means pollen will settle right back onto damp surfaces. The premier window is late April through May, when trees finish pollinating and summer outdoor entertaining begins."
+        ]
+      },
+      {
+        heading: "Fall Exterior Prep: Preventing Winter Mold Growth",
+        paragraphs: [
+          "Early autumn is the second ideal window. After months of intense summer humidity and afternoon storms, green algae and black roof mold reach their peak growth.",
+          "Soft washing in September or October kills active biological colonies before winter, ensuring shingles and siding remain clean and bright all winter long."
+        ]
+      }
+    ],
+    relatedServices: [
+      { title: "Soft Wash House Washing", href: "/services/house-washing" },
+      { title: "Roof Algae Cleaning", href: "/services/roof-cleaning" },
+      { title: "Driveway Cleaning", href: "/services/driveway-cleaning" }
+    ],
+    relatedCities: [
+      { name: "Mooresville, NC", href: "/service-areas/mooresville-nc" },
+      { name: "Davidson, NC", href: "/service-areas/davidson-nc" },
+      { name: "Huntersville, NC", href: "/service-areas/huntersville-nc" }
+    ]
+  },
+
+  "dumpster-pad-cleaning-restaurants-lake-norman": {
+    slug: "/blog/dumpster-pad-cleaning-restaurants-lake-norman",
+    title: "Commercial Dumpster Pad Cleaning: Health Codes & Safety for Lake Norman Restaurants",
+    metaTitle: "Commercial Dumpster Pad Cleaning Lake Norman NC | Restaurant Guide",
+    metaDescription: "Why 200°F hot-water power washing and degreasing of commercial dumpster enclosures in Mooresville & Lake Norman prevents pest infestations & health code violations.",
+    category: "Commercial Property",
+    readTime: "5 min read",
+    publishDate: "2026-09-05",
+    modifiedDate: "2026-10-08",
+    heroImage: svcCommercial,
+    excerpt: "Rancid grease, food waste, and bacteria in dumpster corrals create foul odors and rodent problems. Discover how commercial hot-water pressure washing ensures code compliance.",
+    author: {
+      name: "David Hudson",
+      role: "Founder & Lead Technician, Steam On Wheels LLC"
+    },
+    keyTakeaways: [
+      "Commercial dumpster pads harbor dangerous bacteria, rancid grease, and rodent attractants if not washed regularly.",
+      "Hot water (200°F) is mandatory to emulsify animal fats and cooking oils; cold water only spreads grease slicks.",
+      "Routine monthly or quarterly washdowns ensure compliance with Iredell and Mecklenburg County Health Department codes.",
+      "Steam On Wheels provides overnight 24/7 commercial dispatch to avoid any disruption to dining operations."
+    ],
+    contentSections: [
+      {
+        heading: "The Danger of Neglected Restaurant Dumpster Enclosures",
+        paragraphs: [
+          "In bustling commercial hubs like Mooresville, Birkdale Village in Huntersville, and downtown Davidson, restaurant exterior sanitation is critical for health code compliance and public reputation.",
+          "Cooking oil spills, food waste leaks, and beverage residue seep into porous concrete dumpster pads, creating breeding grounds for flies, maggots, roaches, and rodents while producing foul odors that drift toward customer patios."
+        ]
+      },
+      {
+        heading: "Why 200°F Hot Water and Industrial Degreasers Are Essential",
+        paragraphs: [
+          "Standard cold-water garden hoses or residential washers cannot break the hydrocarbon bonds in solidified grease. Steam On Wheels utilizes high-output trailer rigs delivering 200°F hot water at 4,000 PSI combined with commercial alkaline degreasers.",
+          "This sanitizes concrete down to the pores, dissolves grease slicks, and eliminates odor-causing bacteria instantly."
+        ]
+      }
+    ],
+    relatedServices: [
+      { title: "Commercial Pressure Washing", href: "/services/commercial-pressure-washing" },
+      { title: "24/7 Emergency Service", href: "/services/emergency-service" },
+      { title: "Concrete Cleaning", href: "/services/concrete-cleaning" }
+    ],
+    relatedCities: [
+      { name: "Mooresville, NC", href: "/service-areas/mooresville-nc" },
+      { name: "Cornelius, NC", href: "/service-areas/cornelius-nc" },
+      { name: "Huntersville, NC", href: "/service-areas/huntersville-nc" }
+    ]
   }
 };

@@ -782,7 +782,7 @@ export function EstimatePage() {
       <section className="py-12 bg-slate-50/50 border-y border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-4">
-            Providing Free Estimates Across Mooresville &amp; Surrounding 40-Mile Region
+            Providing Free Estimates Across Mooresville &amp; Surrounding 50-Mile Region
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {serviceTowns.map((town) => (

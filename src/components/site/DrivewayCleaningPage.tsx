@@ -778,7 +778,7 @@ export function DrivewayCleaningPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-sm sm:text-base text-white/90 max-w-2xl leading-relaxed font-medium drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)]"
           >
-            Don't let stained pavement be the first thing you—or your guests—see. Serving residential and commercial clients throughout Mooresville, Troutman, Statesville, Cornelius, Davidson, Huntersville, and our 40-mile service radius.
+            Don't let stained pavement be the first thing you—or your guests—see. Serving residential and commercial clients throughout Mooresville, Troutman, Statesville, Cornelius, Davidson, Huntersville, and our 50-mile service radius.
           </motion.p>
 
           <motion.div

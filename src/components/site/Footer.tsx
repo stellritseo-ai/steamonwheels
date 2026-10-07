@@ -201,13 +201,22 @@ export function Footer() {
 
         {/* Bottom Copy/Trademark Row with Back to Top trigger */}
         <div className="mt-16 pt-8 border-t border-slate-900 flex flex-wrap items-center justify-between gap-6 mb-[-60px]">
-          <p className="text-xs text-slate-500 font-semibold">
-            © {new Date().getFullYear()} Steam On Wheels. All rights reserved. Design By StellR IT LLC
-          </p>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-xs text-slate-500 font-semibold">
+            <p>
+              © {new Date().getFullYear()} Steam On Wheels, LLC. All rights reserved.
+            </p>
+            <div className="flex items-center gap-4 text-slate-400">
+              <a href="/privacy" className="hover:text-sky-400 transition-colors">Privacy Policy</a>
+              <span>•</span>
+              <a href="/terms" className="hover:text-sky-400 transition-colors">Terms of Service</a>
+              <span>•</span>
+              <a href="/sitemap.xml" className="hover:text-sky-400 transition-colors" target="_blank" rel="noopener noreferrer">Sitemap</a>
+            </div>
+          </div>
 
           <div className="flex items-center gap-6">
             <p className="text-xs text-slate-500 font-semibold hidden sm:block">
-              Licensed, Bonded &amp; Insured
+              $2M General Liability Insured • Licensed &amp; Bonded
             </p>
 
             <motion.button

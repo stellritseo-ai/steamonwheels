@@ -8,7 +8,7 @@ export const Route = createFileRoute("/estimate")({
       {
         name: "description",
         content:
-          "Fast, fair & 100% free no-obligation estimates on pressure washing, soft roof cleaning, siding wash & painting in Mooresville, NC & 40-mile radius. Call David Hudson: (704) 516-9509.",
+          "Fast, fair & 100% free no-obligation estimates on pressure washing, soft roof cleaning, siding wash & painting in Mooresville, NC & 50-mile radius. Call David Hudson: (704) 516-9509.",
       },
       { name: "keywords", content: "Free Pressure Washing Estimate, Pressure Washing Quote Mooresville NC, Affordable Pressure Washing NC" },
       { property: "og:title", content: "Free Pressure Washing Estimate Mooresville NC | Steam On Wheels" },

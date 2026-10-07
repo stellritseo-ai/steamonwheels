@@ -54,14 +54,12 @@ export function Hero() {
           </motion.div>
 
           <h1
-            className="text-white tracking-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] -mt-2 mb-2 text-[25px] leading-[38px] md:text-[43px] md:leading-[60px]"
+            className="text-white tracking-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] -mt-2 mb-2 text-[25px] leading-[38px] md:text-[43px] md:leading-[56px]"
             style={{ fontWeight: 800, fontFamily: "inherit" }}
           >
-            Professional Residential &amp;
-            Commercial Pressure
-            Washing...{" "}
+            Professional Pressure Washing in{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500">
-              On Demand
+              Mooresville, NC
             </span>
           </h1>
 
@@ -73,7 +71,7 @@ export function Hero() {
             className="text-xs sm:text-sm md:text-base text-neutral-300 font-medium leading-relaxed max-w-2xl drop-shadow-[0_1px_4px_rgba(0,0,0,0.3)]"
             style={{ marginBottom: "20px" }}
           >
-            Providing top-rated pressure washing, soft roof cleaning, house washing, driveway concrete degreasing, and exterior painting across Mooresville, Lake Norman, Cornelius, Huntersville, Denver, Statesville, Hickory &amp; Charlotte, NC. 15+ years of experience. Fully Licensed &amp; Insured.
+            Steam On Wheels LLC is Mooresville’s trusted exterior cleaning specialist based at 107 Kase Ct. Led by founder David Hudson with over 15 years of hands-on expertise, we deliver commercial-grade hot-water power washing, gentle soft-wash house washing, and shingle-safe roof cleaning for residential and commercial properties. Fully licensed, $2M insured, and proudly serving Mooresville, Lake Norman, and communities across a 50-mile radius with 100% free estimates.
           </motion.p>
 
           {/* Quick Actions */}

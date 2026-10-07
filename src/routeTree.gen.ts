@@ -9,10 +9,12 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SidingCleaningRouteImport } from './routes/siding-cleaning'
 import { Route as RoofWashingRouteImport } from './routes/roof-washing'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as ResidentialRouteImport } from './routes/residential'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PaintingServiceRouteImport } from './routes/painting-service'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as EstimateRouteImport } from './routes/estimate'
@@ -47,8 +49,16 @@ import { Route as BlogPressureWashingVsSoftWashingRouteImport } from './routes/b
 import { Route as BlogHowToRemoveAlgaeRoofLakeNormanRouteImport } from './routes/blog/how-to-remove-algae-roof-lake-norman'
 import { Route as BlogHowToCleanConcreteDrivewayNcClayRouteImport } from './routes/blog/how-to-clean-concrete-driveway-nc-clay'
 import { Route as BlogHowOftenToPressureWashHouseNcRouteImport } from './routes/blog/how-often-to-pressure-wash-house-nc'
+import { Route as BlogHowMuchDoesPressureWashingCostMooresvilleNcRouteImport } from './routes/blog/how-much-does-pressure-washing-cost-mooresville-nc'
+import { Route as BlogDumpsterPadCleaningRestaurantsLakeNormanRouteImport } from './routes/blog/dumpster-pad-cleaning-restaurants-lake-norman'
 import { Route as BlogCommercialPressureWashingLakeNormanRouteImport } from './routes/blog/commercial-pressure-washing-lake-norman'
+import { Route as BlogBestTimeOfYearToPressureWashHomeMooresvilleNcRouteImport } from './routes/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc'
 
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SidingCleaningRoute = SidingCleaningRouteImport.update({
   id: '/siding-cleaning',
   path: '/siding-cleaning',
@@ -67,6 +77,11 @@ const ReviewsRoute = ReviewsRouteImport.update({
 const ResidentialRoute = ResidentialRouteImport.update({
   id: '/residential',
   path: '/residential',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PaintingServiceRoute = PaintingServiceRouteImport.update({
@@ -253,10 +268,28 @@ const BlogHowOftenToPressureWashHouseNcRoute =
     path: '/blog/how-often-to-pressure-wash-house-nc',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogHowMuchDoesPressureWashingCostMooresvilleNcRoute =
+  BlogHowMuchDoesPressureWashingCostMooresvilleNcRouteImport.update({
+    id: '/blog/how-much-does-pressure-washing-cost-mooresville-nc',
+    path: '/blog/how-much-does-pressure-washing-cost-mooresville-nc',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogDumpsterPadCleaningRestaurantsLakeNormanRoute =
+  BlogDumpsterPadCleaningRestaurantsLakeNormanRouteImport.update({
+    id: '/blog/dumpster-pad-cleaning-restaurants-lake-norman',
+    path: '/blog/dumpster-pad-cleaning-restaurants-lake-norman',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const BlogCommercialPressureWashingLakeNormanRoute =
   BlogCommercialPressureWashingLakeNormanRouteImport.update({
     id: '/blog/commercial-pressure-washing-lake-norman',
     path: '/blog/commercial-pressure-washing-lake-norman',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogBestTimeOfYearToPressureWashHomeMooresvilleNcRoute =
+  BlogBestTimeOfYearToPressureWashHomeMooresvilleNcRouteImport.update({
+    id: '/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc',
+    path: '/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc',
     getParentRoute: () => rootRouteImport,
   } as any)
 
@@ -270,11 +303,16 @@ export interface FileRoutesByFullPath {
   '/estimate': typeof EstimateRoute
   '/gallery': typeof GalleryRoute
   '/painting-service': typeof PaintingServiceRoute
+  '/privacy': typeof PrivacyRoute
   '/residential': typeof ResidentialRoute
   '/reviews': typeof ReviewsRoute
   '/roof-washing': typeof RoofWashingRoute
   '/siding-cleaning': typeof SidingCleaningRoute
+  '/terms': typeof TermsRoute
+  '/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc': typeof BlogBestTimeOfYearToPressureWashHomeMooresvilleNcRoute
   '/blog/commercial-pressure-washing-lake-norman': typeof BlogCommercialPressureWashingLakeNormanRoute
+  '/blog/dumpster-pad-cleaning-restaurants-lake-norman': typeof BlogDumpsterPadCleaningRestaurantsLakeNormanRoute
+  '/blog/how-much-does-pressure-washing-cost-mooresville-nc': typeof BlogHowMuchDoesPressureWashingCostMooresvilleNcRoute
   '/blog/how-often-to-pressure-wash-house-nc': typeof BlogHowOftenToPressureWashHouseNcRoute
   '/blog/how-to-clean-concrete-driveway-nc-clay': typeof BlogHowToCleanConcreteDrivewayNcClayRoute
   '/blog/how-to-remove-algae-roof-lake-norman': typeof BlogHowToRemoveAlgaeRoofLakeNormanRoute
@@ -311,11 +349,16 @@ export interface FileRoutesByTo {
   '/estimate': typeof EstimateRoute
   '/gallery': typeof GalleryRoute
   '/painting-service': typeof PaintingServiceRoute
+  '/privacy': typeof PrivacyRoute
   '/residential': typeof ResidentialRoute
   '/reviews': typeof ReviewsRoute
   '/roof-washing': typeof RoofWashingRoute
   '/siding-cleaning': typeof SidingCleaningRoute
+  '/terms': typeof TermsRoute
+  '/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc': typeof BlogBestTimeOfYearToPressureWashHomeMooresvilleNcRoute
   '/blog/commercial-pressure-washing-lake-norman': typeof BlogCommercialPressureWashingLakeNormanRoute
+  '/blog/dumpster-pad-cleaning-restaurants-lake-norman': typeof BlogDumpsterPadCleaningRestaurantsLakeNormanRoute
+  '/blog/how-much-does-pressure-washing-cost-mooresville-nc': typeof BlogHowMuchDoesPressureWashingCostMooresvilleNcRoute
   '/blog/how-often-to-pressure-wash-house-nc': typeof BlogHowOftenToPressureWashHouseNcRoute
   '/blog/how-to-clean-concrete-driveway-nc-clay': typeof BlogHowToCleanConcreteDrivewayNcClayRoute
   '/blog/how-to-remove-algae-roof-lake-norman': typeof BlogHowToRemoveAlgaeRoofLakeNormanRoute
@@ -353,11 +396,16 @@ export interface FileRoutesById {
   '/estimate': typeof EstimateRoute
   '/gallery': typeof GalleryRoute
   '/painting-service': typeof PaintingServiceRoute
+  '/privacy': typeof PrivacyRoute
   '/residential': typeof ResidentialRoute
   '/reviews': typeof ReviewsRoute
   '/roof-washing': typeof RoofWashingRoute
   '/siding-cleaning': typeof SidingCleaningRoute
+  '/terms': typeof TermsRoute
+  '/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc': typeof BlogBestTimeOfYearToPressureWashHomeMooresvilleNcRoute
   '/blog/commercial-pressure-washing-lake-norman': typeof BlogCommercialPressureWashingLakeNormanRoute
+  '/blog/dumpster-pad-cleaning-restaurants-lake-norman': typeof BlogDumpsterPadCleaningRestaurantsLakeNormanRoute
+  '/blog/how-much-does-pressure-washing-cost-mooresville-nc': typeof BlogHowMuchDoesPressureWashingCostMooresvilleNcRoute
   '/blog/how-often-to-pressure-wash-house-nc': typeof BlogHowOftenToPressureWashHouseNcRoute
   '/blog/how-to-clean-concrete-driveway-nc-clay': typeof BlogHowToCleanConcreteDrivewayNcClayRoute
   '/blog/how-to-remove-algae-roof-lake-norman': typeof BlogHowToRemoveAlgaeRoofLakeNormanRoute
@@ -396,11 +444,16 @@ export interface FileRouteTypes {
     | '/estimate'
     | '/gallery'
     | '/painting-service'
+    | '/privacy'
     | '/residential'
     | '/reviews'
     | '/roof-washing'
     | '/siding-cleaning'
+    | '/terms'
+    | '/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc'
     | '/blog/commercial-pressure-washing-lake-norman'
+    | '/blog/dumpster-pad-cleaning-restaurants-lake-norman'
+    | '/blog/how-much-does-pressure-washing-cost-mooresville-nc'
     | '/blog/how-often-to-pressure-wash-house-nc'
     | '/blog/how-to-clean-concrete-driveway-nc-clay'
     | '/blog/how-to-remove-algae-roof-lake-norman'
@@ -437,11 +490,16 @@ export interface FileRouteTypes {
     | '/estimate'
     | '/gallery'
     | '/painting-service'
+    | '/privacy'
     | '/residential'
     | '/reviews'
     | '/roof-washing'
     | '/siding-cleaning'
+    | '/terms'
+    | '/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc'
     | '/blog/commercial-pressure-washing-lake-norman'
+    | '/blog/dumpster-pad-cleaning-restaurants-lake-norman'
+    | '/blog/how-much-does-pressure-washing-cost-mooresville-nc'
     | '/blog/how-often-to-pressure-wash-house-nc'
     | '/blog/how-to-clean-concrete-driveway-nc-clay'
     | '/blog/how-to-remove-algae-roof-lake-norman'
@@ -478,11 +536,16 @@ export interface FileRouteTypes {
     | '/estimate'
     | '/gallery'
     | '/painting-service'
+    | '/privacy'
     | '/residential'
     | '/reviews'
     | '/roof-washing'
     | '/siding-cleaning'
+    | '/terms'
+    | '/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc'
     | '/blog/commercial-pressure-washing-lake-norman'
+    | '/blog/dumpster-pad-cleaning-restaurants-lake-norman'
+    | '/blog/how-much-does-pressure-washing-cost-mooresville-nc'
     | '/blog/how-often-to-pressure-wash-house-nc'
     | '/blog/how-to-clean-concrete-driveway-nc-clay'
     | '/blog/how-to-remove-algae-roof-lake-norman'
@@ -520,11 +583,16 @@ export interface RootRouteChildren {
   EstimateRoute: typeof EstimateRoute
   GalleryRoute: typeof GalleryRoute
   PaintingServiceRoute: typeof PaintingServiceRoute
+  PrivacyRoute: typeof PrivacyRoute
   ResidentialRoute: typeof ResidentialRoute
   ReviewsRoute: typeof ReviewsRoute
   RoofWashingRoute: typeof RoofWashingRoute
   SidingCleaningRoute: typeof SidingCleaningRoute
+  TermsRoute: typeof TermsRoute
+  BlogBestTimeOfYearToPressureWashHomeMooresvilleNcRoute: typeof BlogBestTimeOfYearToPressureWashHomeMooresvilleNcRoute
   BlogCommercialPressureWashingLakeNormanRoute: typeof BlogCommercialPressureWashingLakeNormanRoute
+  BlogDumpsterPadCleaningRestaurantsLakeNormanRoute: typeof BlogDumpsterPadCleaningRestaurantsLakeNormanRoute
+  BlogHowMuchDoesPressureWashingCostMooresvilleNcRoute: typeof BlogHowMuchDoesPressureWashingCostMooresvilleNcRoute
   BlogHowOftenToPressureWashHouseNcRoute: typeof BlogHowOftenToPressureWashHouseNcRoute
   BlogHowToCleanConcreteDrivewayNcClayRoute: typeof BlogHowToCleanConcreteDrivewayNcClayRoute
   BlogHowToRemoveAlgaeRoofLakeNormanRoute: typeof BlogHowToRemoveAlgaeRoofLakeNormanRoute
@@ -554,6 +622,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/siding-cleaning': {
       id: '/siding-cleaning'
       path: '/siding-cleaning'
@@ -580,6 +655,13 @@ declare module '@tanstack/react-router' {
       path: '/residential'
       fullPath: '/residential'
       preLoaderRoute: typeof ResidentialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/painting-service': {
@@ -820,11 +902,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogHowOftenToPressureWashHouseNcRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/how-much-does-pressure-washing-cost-mooresville-nc': {
+      id: '/blog/how-much-does-pressure-washing-cost-mooresville-nc'
+      path: '/blog/how-much-does-pressure-washing-cost-mooresville-nc'
+      fullPath: '/blog/how-much-does-pressure-washing-cost-mooresville-nc'
+      preLoaderRoute: typeof BlogHowMuchDoesPressureWashingCostMooresvilleNcRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/dumpster-pad-cleaning-restaurants-lake-norman': {
+      id: '/blog/dumpster-pad-cleaning-restaurants-lake-norman'
+      path: '/blog/dumpster-pad-cleaning-restaurants-lake-norman'
+      fullPath: '/blog/dumpster-pad-cleaning-restaurants-lake-norman'
+      preLoaderRoute: typeof BlogDumpsterPadCleaningRestaurantsLakeNormanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/commercial-pressure-washing-lake-norman': {
       id: '/blog/commercial-pressure-washing-lake-norman'
       path: '/blog/commercial-pressure-washing-lake-norman'
       fullPath: '/blog/commercial-pressure-washing-lake-norman'
       preLoaderRoute: typeof BlogCommercialPressureWashingLakeNormanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc': {
+      id: '/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc'
+      path: '/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc'
+      fullPath: '/blog/best-time-of-year-to-pressure-wash-home-mooresville-nc'
+      preLoaderRoute: typeof BlogBestTimeOfYearToPressureWashHomeMooresvilleNcRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -840,12 +943,20 @@ const rootRouteChildren: RootRouteChildren = {
   EstimateRoute: EstimateRoute,
   GalleryRoute: GalleryRoute,
   PaintingServiceRoute: PaintingServiceRoute,
+  PrivacyRoute: PrivacyRoute,
   ResidentialRoute: ResidentialRoute,
   ReviewsRoute: ReviewsRoute,
   RoofWashingRoute: RoofWashingRoute,
   SidingCleaningRoute: SidingCleaningRoute,
+  TermsRoute: TermsRoute,
+  BlogBestTimeOfYearToPressureWashHomeMooresvilleNcRoute:
+    BlogBestTimeOfYearToPressureWashHomeMooresvilleNcRoute,
   BlogCommercialPressureWashingLakeNormanRoute:
     BlogCommercialPressureWashingLakeNormanRoute,
+  BlogDumpsterPadCleaningRestaurantsLakeNormanRoute:
+    BlogDumpsterPadCleaningRestaurantsLakeNormanRoute,
+  BlogHowMuchDoesPressureWashingCostMooresvilleNcRoute:
+    BlogHowMuchDoesPressureWashingCostMooresvilleNcRoute,
   BlogHowOftenToPressureWashHouseNcRoute:
     BlogHowOftenToPressureWashHouseNcRoute,
   BlogHowToCleanConcreteDrivewayNcClayRoute:

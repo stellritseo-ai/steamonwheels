@@ -785,7 +785,7 @@ export function SidingCleaningPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-sm sm:text-base text-white/90 max-w-2xl leading-relaxed font-medium drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)]"
           >
-            Don't let a dirty exterior hide your home's true character. Proudly serving Mooresville, Troutman, Statesville, Cornelius, Davidson, Huntersville, and our entire 40-mile service area.
+            Don't let a dirty exterior hide your home's true character. Proudly serving Mooresville, Troutman, Statesville, Cornelius, Davidson, Huntersville, and our entire 50-mile service area.
           </motion.p>
 
           <motion.div
